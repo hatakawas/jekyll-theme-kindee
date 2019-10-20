@@ -20,6 +20,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
+
+language: en
+# timezone:
+# Blogpost date format
+date_format: "%Y.%m.%d"
+
 # Build settings
 markdown: kramdown
 # theme: jekyll-theme-kindee
@@ -32,7 +38,6 @@ plugins:
 # theme_namespace: kindee
 
 kindee:
-  language: zh
   # Author
   author:
     name: THE-AUTHOR-NAME
@@ -52,5 +57,4 @@ kindee:
     recent_posts:
       enabled: true
 
-  # Blogpost date format
-  date_format: "%Y.%m.%d"
+
