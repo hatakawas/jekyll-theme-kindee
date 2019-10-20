@@ -2,4 +2,15 @@
 layout: default
 ---
 
-{{ content }}
+<div class="site-main-content">
+  <section class="card singleton">
+    <div class="card-content">
+      <header class="singleton-header">
+        <h1 class="singleton-title">{{ page.title }}</h1>
+      </header>
+      <div class="singleton-content">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+</div>

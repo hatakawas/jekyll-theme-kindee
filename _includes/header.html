@@ -1,0 +1,16 @@
+<div class="site-header-content container">
+  {%- assign language = site.kindee.language -%}
+  <div class="site-title">
+    <a rel="author" href="{{ '/' }}" itemprop="url">{{ site.title | escape }}</a>
+  </div>
+  <nav class="site-menu">
+    <ul>
+      <li><a href="{{ '/' }}" itemprop="url">Home</a></li>
+      <li><a href="{{ '/categories.html' }}" itemprop="url">{{ site.data.languages[language].menu.categories }}</a></li>
+      <li><a href="{{ '/tags.html' }}" itemprop="url">Tags</a></li>
+      <li><a href="{{ '/archives.html' }}" itemprop="url">Archives</a></li>
+      <li><a href="{{ '/about.html' }}" itemprop="url">About</a></li>
+      <li><a href="{{ '/feed.xml'  }}" target="_blank" itemprop="url">RSS</a></li>
+    </ul>
+  </nav>
+</div>
