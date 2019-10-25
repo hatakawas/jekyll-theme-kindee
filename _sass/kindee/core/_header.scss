@@ -1,19 +1,38 @@
 .site-header-content {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+  min-height: inherit;
 
-  .site-title {
+  .site-brand {
     margin-left: 20px;
-    font-size: 20px;
-    font-weight: 700px;
-    letter-spacing: 1px;
+    flex: none;
+    display: flex;
+    align-items: stretch;
+
+    .site-title {
+      font-size: 20px;
+      font-weight: 700px;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+    }
   }
 
   .site-menu {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
     ul {
       margin: 0;
+      padding: 0;
       list-style: none;
+      display: flex;
+      align-items: stretch;
 
       li {
         display: inline-block;
@@ -26,4 +45,48 @@
       display: inline-block;
     }
   }
+
+  #menu-trigger {
+    display: none;
+  }
+
+  .menu-icon {
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  label[for="menu-trigger"] {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  input ~ .trigger {
+    clear: both;
+    display: none;
+  }
+
+  input:checked ~ .trigger {
+    display: block;
+    // padding-bottom: 5px;
+  }
+
+
+
+  @media (max-width: 760px) {
+    .site-menu {
+      display: none;
+    }
+
+
+  }
+
+
 }

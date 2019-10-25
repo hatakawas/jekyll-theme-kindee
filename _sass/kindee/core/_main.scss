@@ -1,3 +1,10 @@
 .site-main-content {
   padding: 10px;
 }
+
+
+@media (max-width: 760px) {
+  .site-main-content {
+    padding: 10px 0;
+  }
+}
