@@ -5,29 +5,24 @@
 
 <body class="site">
   <header id="site-header">
-    <!-- <div class="container"> -->
-      {%- include header.html -%}
-    <!-- </div> -->
+    {%- include header.html -%}
   </header>
   <div id="site-body">
-    <!-- <div class="container"> -->
-      <div class="site-body-content container">
-        <main id="site-main">
-          {{content}}
-        </main>
-        {%- if site.kindee.sidebar.enabled -%}
-        <aside id="site-sidebar">
-          {%- include sidebar.html -%}
-        </aside>
-        {%- endif -%}
-      </div>
-    <!-- </div> -->
+    <div class="site-body-content container">
+      <main id="site-main">
+        {{content}}
+      </main>
+      {%- if site.kindee.sidebar.enabled -%}
+      <aside id="site-sidebar">
+        {%- include sidebar.html -%}
+      </aside>
+      {%- endif -%}
+    </div>
   </div>
   <footer id="site-footer">
-    <!-- <div class="container"> -->
-      {%- include footer.html -%}
-    <!-- </div> -->
+    {%- include footer.html -%}
   </footer>
+  {%- include after-footer.html -%}
 </body>
 
 </html>

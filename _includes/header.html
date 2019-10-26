@@ -2,20 +2,15 @@
   <div class="site-brand">
     <a class="site-title" rel="author" href="{{ '/' }}" itemprop="url">{{ site.title | escape }}</a>
   </div>
-  <input type="checkbox" id="menu-trigger" class="menu-trigger" />
-  <label for="menu-trigger">
-    <span class="menu-icon">
-        <i class="fa fa-lg fa-bars"></i>
-    </span>
-  </label>
-  <nav class="trigger">
-    <ul>
-      <li><a href="{{ '/' }}" itemprop="url">Home</a></li>
-      <li><a href="{{ '/categories.html' }}" itemprop="url">Categories</a></li>
-      <li><a href="{{ '/tags.html' }}" itemprop="url">Tags</a></li>
-      <li><a href="{{ '/archives.html' }}" itemprop="url">Archives</a></li>
-      <li><a href="{{ '/about.html' }}" itemprop="url">About</a></li>
-      <li><a href="{{ '/feed.xml'  }}" target="_blank" itemprop="url">RSS</a></li>
+  <button class="menu-trigger" type="button"><span class="menu-icon"><i class="fa fa-2x fa-bars"></i></span></button>
+  <nav class="site-menu trigger">
+    <ul class="menus">
+      <li class="menu"><a href="{{ '/' }}" itemprop="url">Home</a></li>
+      <li class="menu"><a href="{{ '/categories.html' }}" itemprop="url">Categories</a></li>
+      <li class="menu"><a href="{{ '/tags.html' }}" itemprop="url">Tags</a></li>
+      <li class="menu"><a href="{{ '/archives.html' }}" itemprop="url">Archives</a></li>
+      <li class="menu"><a href="{{ '/about.html' }}" itemprop="url">About</a></li>
+      <li class="menu"><a href="{{ '/feed.xml'  }}" target="_blank" itemprop="url">RSS</a></li>
     </ul>
   </nav>
 </div>

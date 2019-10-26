@@ -7,7 +7,7 @@
 
   .site-brand {
     margin-left: 20px;
-    flex: none;
+    flex: 1 1 auto;
     display: flex;
     align-items: stretch;
 
@@ -27,66 +27,58 @@
     align-items: center;
 
 
-    ul {
+    .menus {
       margin: 0;
       padding: 0;
       list-style: none;
       display: flex;
-      align-items: stretch;
+      flex-flow: row wrap;
+      justify-content: space-between;
 
-      li {
-        display: inline-block;
-        margin-right: 20px;
+      .menu {
         font-size: 14px;
+
+        a {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  .menu-trigger {
+    box-sizing: border-box;
+    border: solid 1px;
+    padding: 4px 8px;
+    .menu-icon {
+      padding-top: 10px;
+
+    }
+  }
+
+  @media screen and (min-width: 781px) {
+    .menu-trigger {
+      display: none;
+    }
+  }
+
+  // @media (max-width: 760px) {
+  @media (max-width: 780px) {
+    .site-menu {
+      .menus {
+        // display: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu {
+          text-align: center;
+        }
       }
     }
 
-    a {
-      display: inline-block;
-    }
-  }
-
-  #menu-trigger {
-    display: none;
-  }
-
-  .menu-icon {
-    float: right;
-    width: 36px;
-    height: 26px;
-    line-height: 0;
-    padding-top: 10px;
-    text-align: center;
-  }
-
-  label[for="menu-trigger"] {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 36px;
-    z-index: 2;
-    cursor: pointer;
-  }
-
-  input ~ .trigger {
-    clear: both;
-    display: none;
-  }
-
-  input:checked ~ .trigger {
-    display: block;
-    // padding-bottom: 5px;
-  }
-
-
-
-  @media (max-width: 760px) {
-    .site-menu {
+    .trigger {
       display: none;
     }
-
-
   }
-
-
 }
