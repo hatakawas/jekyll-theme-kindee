@@ -1,19 +1,16 @@
 .site-header-content {
   box-sizing: border-box;
   min-height: inherit;
+
   display: flex;
   justify-content: space-between;
 
-
   .site-brand {
-    // margin-left: 20px;
+
     .site-title {
       font-size: 20px;
       font-weight: 700px;
       letter-spacing: 1px;
-      // margin-left: 20px;
-      // display: flex;
-      // align-items: center;
     }
   }
 
@@ -21,18 +18,18 @@
     .toggle {
       box-sizing: border-box;
       border: solid 1px;
-      // padding: 4px 8px;
+      padding: 4px 8px;
+      padding-top: 10px;
 
-      // .menu-icon {
-      //   padding-top: 10px;
-      // }
+      .menu-icon {
+        padding-top: 14px;
+      }
     }
 
     .menus {
       margin: 0;
       padding: 0;
       list-style: none;
-      // display: none;
 
       .menu {
         font-size: 14px;
@@ -42,62 +39,60 @@
         }
       }
     }
-
   }
+}
 
 
-  @media screen and (min-width: 780px) {
-    .toggle {
-      display: none;
-    }
-
+ // 正常屏幕
+ @media screen and (min-width: 780px) {
+  .site-header-content {
     .site-brand {
-      flex: 1;
-      display: flex;
-      align-items: center;
+      .site-title {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+      }
     }
 
     .site-nav {
-      display: flex;
-      align-items: center;
-    }
-
-    .menus {
-      height: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-
-  // @media (max-width: 760px) {
-  @media (max-width: 780px) {
-    .toggle {
-      display: block;
-    }
-    .menus {
-      display: none;
-    }
-   & {
-     display: block;
-   }
-
-    .menus.active {
-      background: seagreen;
-      display: flex;
-      flex-direction: column;
-
-    }
-      // .site-brand {
-      //   display: flex;
-      //   justify-content: center;
-
-      // }
-
-      .toggle,
-      .site-brand {
-        display: inline-block;
+      .toggle {
+        display: none;
       }
 
+      .menus {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+
+// // @media (max-width: 760px) {
+@media (max-width: 780px) {
+
+  .site-header-content {
+
+    .site-brand {
+      flex: auto;
+    }
+    .site-nav {
+      flex: none;
+      .menus {
+        // display: flex;
+        // flex-direction: column;
+        float: bottom;
+        display: block;
+        height: 0;
+        background: seagreen;
+        color: purple;
+
+        .menu {
+          display: block;
+        }
+      }
+    }
   }
 }
