@@ -1,39 +1,38 @@
 .site-header-content {
   box-sizing: border-box;
+  min-height: inherit;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-  min-height: inherit;
+
 
   .site-brand {
-    margin-left: 20px;
-    flex: 1 1 auto;
-    display: flex;
-    align-items: stretch;
-
+    // margin-left: 20px;
     .site-title {
       font-size: 20px;
       font-weight: 700px;
       letter-spacing: 1px;
-      display: flex;
-      align-items: center;
+      // margin-left: 20px;
+      // display: flex;
+      // align-items: center;
     }
   }
 
-  .site-menu {
-    flex: 1 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  .site-nav {
+    .toggle {
+      box-sizing: border-box;
+      border: solid 1px;
+      // padding: 4px 8px;
 
+      // .menu-icon {
+      //   padding-top: 10px;
+      // }
+    }
 
     .menus {
       margin: 0;
       padding: 0;
       list-style: none;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
+      // display: none;
 
       .menu {
         font-size: 14px;
@@ -43,42 +42,62 @@
         }
       }
     }
+
   }
 
-  .menu-trigger {
-    box-sizing: border-box;
-    border: solid 1px;
-    padding: 4px 8px;
-    .menu-icon {
-      padding-top: 10px;
 
-    }
-  }
-
-  @media screen and (min-width: 781px) {
-    .menu-trigger {
+  @media screen and (min-width: 780px) {
+    .toggle {
       display: none;
+    }
+
+    .site-brand {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .menus {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 
   // @media (max-width: 760px) {
   @media (max-width: 780px) {
-    .site-menu {
-      .menus {
-        // display: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-
-        .menu {
-          text-align: center;
-        }
-      }
+    .toggle {
+      display: block;
     }
-
-    .trigger {
+    .menus {
       display: none;
     }
+   & {
+     display: block;
+   }
+
+    .menus.active {
+      background: seagreen;
+      display: flex;
+      flex-direction: column;
+
+    }
+      // .site-brand {
+      //   display: flex;
+      //   justify-content: center;
+
+      // }
+
+      .toggle,
+      .site-brand {
+        display: inline-block;
+      }
+
   }
 }
