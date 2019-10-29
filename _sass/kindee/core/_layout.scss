@@ -37,7 +37,7 @@
   margin: 0 auto;
   padding: 10px 0;
   max-width: $site-width;
-  display: flex;
+  // display: flex;
 }
 
 #site-main {
@@ -54,6 +54,9 @@
   @include sidebar($sidebar-enabled, $sidebar-aside);
 }
 
+.site-body-content {
+  display: flex;
+}
 
 @media (max-width: 760px) {
   #site-sidebar {
