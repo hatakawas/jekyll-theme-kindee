@@ -23,17 +23,17 @@
   background: $site-body-background;
 }
 
-#site-header,
-#site-footer,
-#site-body {
-  box-sizing: border-box;
-  display: flex;
-}
+// #site-header,
+// #site-footer,
+// #site-body {
+//   box-sizing: border-box;
+//   display: flex;
+// }
 
 .site-header-content,
 .site-footer-content,
 .site-body-content {
-  flex: auto;
+  // flex: auto;
   margin: 0 auto;
   padding: 10px 0;
   max-width: $site-width;

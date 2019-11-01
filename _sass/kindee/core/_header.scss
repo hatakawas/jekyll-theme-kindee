@@ -1,20 +1,18 @@
 .site-header-content {
   box-sizing: border-box;
-  min-height: inherit;
-
-  display: flex;
-  justify-content: space-between;
-
-  .site-brand {
-
-    .site-title {
-      font-size: 20px;
-      font-weight: 700px;
-      letter-spacing: 1px;
-    }
-  }
+  // min-height: inherit;
 
   .site-nav {
+    .brand {
+      display: inline;
+      .title {
+        display: block;
+        font-size: 20px;
+        font-weight: 700px;
+        letter-spacing: 1px;
+      }
+    }
+
     .toggle {
       box-sizing: border-box;
       border: solid 1px;
@@ -32,67 +30,67 @@
       list-style: none;
 
       .menu {
-        font-size: 14px;
+        display: inline;
+        // font-size: 14px;
 
         a {
-          padding: 10px;
+          // padding: 15px 10px;
+          display: block;
         }
       }
     }
   }
-}
 
-
-// 正常屏幕
-@media screen and (min-width: 780px) {
-  .site-header-content {
-    .site-brand {
-      .site-title {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        margin-left: 10px;
-      }
-    }
-
+  // 正常屏幕
+  @media screen and (min-width: 780px) {
     .site-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .title {
+        padding: 10px;
+      }
+
       .toggle {
         display: none;
       }
 
       .menus {
-        height: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+
+        .menu {
+          a {
+            padding: 15px 10px;
+          }
+        }
       }
     }
   }
-}
 
-// 小屏幕
-@media (max-width: 780px) {
-
-  .site-header-content {
-
-    .site-brand {
-      flex: auto;
-    }
-
+  // 小屏幕
+  @media (max-width: 780px) {
     .site-nav {
-      flex: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
 
       .menus {
-        // display: flex;
-        // flex-direction: column;
-        float: bottom;
+        display: none;
+      }
+
+      .menus.active {
         display: block;
-        height: 0;
         background: seagreen;
-        color: purple;
+        flex-basis: 100%;
 
         .menu {
-          display: block;
+          a {
+            padding: 10px;
+          }
         }
       }
     }
