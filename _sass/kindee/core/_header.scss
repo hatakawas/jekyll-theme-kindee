@@ -37,8 +37,8 @@
     }
   }
 
-  // 正常屏幕
-  @media screen and (min-width: 780px) {
+  // >= Laptop
+  @media screen and (min-width: $laptop-min-width) {
     .site-nav {
       display: flex;
       justify-content: space-between;
@@ -67,8 +67,8 @@
     }
   }
 
-  // 小屏幕
-  @media (max-width: 780px) {
+  // <= Tablet
+  @media (max-width: $tablet-max-width) {
     .site-nav {
       display: flex;
       flex-wrap: wrap;
