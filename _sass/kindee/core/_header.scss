@@ -15,9 +15,7 @@
 
     .toggle {
       box-sizing: border-box;
-      border: solid 1px;
       padding: 4px 8px;
-      padding-top: 10px;
 
       .menu-icon {
         padding-top: 14px;
@@ -31,10 +29,8 @@
 
       .menu {
         display: inline;
-        // font-size: 14px;
 
         a {
-          // padding: 15px 10px;
           display: block;
         }
       }
@@ -77,6 +73,17 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+
+      .brand {
+        flex: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .toggle {
+        margin-right: 10px;
+      }
 
       .menus {
         display: none;

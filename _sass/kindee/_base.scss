@@ -20,12 +20,16 @@ h6 {
 }
 
 a {
-  cursor: pointer;
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
-    color: blue;
+    color: steelblue;
+  }
+
+  &:visited {
+    color: inherit;
   }
 }
 
@@ -43,4 +47,3 @@ pre {
   overflow: scroll;
   max-height: 400px;
 }
-
