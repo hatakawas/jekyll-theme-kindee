@@ -6,10 +6,12 @@ title: About
 
 ## 关于
 
-简介: 游戏公司的非游戏开发人员
+- 作者：善流
 
+- 主题名称：Jekyll-Theme-Kindee
 
-## 签名
+- 主题简介: 一个简洁而不简单的 Jekyll 博客主题
 
-北冥有鱼，其名为鲲，鲲之大，一锅炖不下。化而为鸟，其名为鹏，鹏之大，一锅炖不下。
+- 名称来由：当作者决定开发此主题时，目光刚好落在面前的 Kindle 电子书阅读器设备上，由此而名
 
+- 主题源码：[https://github.com/hatakawas/jekyll-theme-kindee](https://github.com/hatakawas/jekyll-theme-kindee)

@@ -25,7 +25,7 @@ a {
   cursor: pointer;
 
   &:hover {
-    color: steelblue;
+    color: seagreen;
   }
 
   &:visited {
@@ -42,8 +42,10 @@ img {
 }
 
 // code snippets
-pre {
+div.highlight {
+  // padding: 8px;
+}
+pre.highlight {
   padding: 8px;
-  overflow: scroll;
-  max-height: 400px;
+  overflow: auto;
 }
