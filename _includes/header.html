@@ -1,16 +1,16 @@
 <div class="site-header-content container">
   <nav id="site-nav" class="site-nav">
     <div class="brand">
-      <a class="title" rel="author" href="{{ '/' }}" itemprop="url">{{ site.title | escape }}</a>
+      <a class="title" rel="author" href="{{ '/' | relative_url }}" itemprop="url">{{ site.title | escape }}</a>
     </div>
     <div class="toggle" type="button"><i class="fa fa-2x fa-bars"></i></div>
     <ul class="menus">
-      <li class="menu"><a href="{{ '/' }}" itemprop="url">首页</a></li>
-      <li class="menu"><a href="{{ '/categories.html' }}" itemprop="url">分类</a></li>
-      <li class="menu"><a href="{{ '/tags.html' }}" itemprop="url">标签</a></li>
-      <li class="menu"><a href="{{ '/archives.html' }}" itemprop="url">归档</a></li>
-      <li class="menu"><a href="{{ '/about.html' }}" itemprop="url">关于</a></li>
-      <li class="menu"><a href="{{ '/feed.xml' }}" target="_blank" itemprop="url">订阅</a></li>
+      <li class="menu"><a href="{{ '/' | relative_url }}" itemprop="url">首页</a></li>
+      <li class="menu"><a href="{{ '/categories.html' | relative_url }}" itemprop="url">分类</a></li>
+      <li class="menu"><a href="{{ '/tags.html' | relative_url }}" itemprop="url">标签</a></li>
+      <li class="menu"><a href="{{ '/archives.html' | relative_url }}" itemprop="url">归档</a></li>
+      <li class="menu"><a href="{{ '/about.html' | relative_url }}" itemprop="url">关于</a></li>
+      <li class="menu"><a href="{{ '/feed.xml' | relative_url }}" target="_blank" itemprop="url">订阅</a></li>
     </ul>
   </nav>
 </div>

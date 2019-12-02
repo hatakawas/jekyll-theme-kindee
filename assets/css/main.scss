@@ -5,7 +5,7 @@
 $sidebar-enabled: {{ site.kindee.sidebar.enabled }};
 $sidebar-aside: {{ site.kindee.sidebar.aside }};
 
-$background-image-url: url({{'/assets/images/background.jpg' | relative_url}});
+$background-image-url: url({{ '/assets/images/background.jpg' | relative_url }});
 
 @import "kindee";
 
