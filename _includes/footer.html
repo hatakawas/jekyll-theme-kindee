@@ -2,7 +2,7 @@
   <div class="copyright">
     &copy; <span itemprop="copyrightYear">{{ "now" | date: "%Y"}}</span>
     <span class="with-love"><i class="fa fa-heart"></i></span>
-    <span class="author"><a href="{{ site.website }}">{{ site.author | default: 'AUTHOR' }}</a></span>
+    <span class="author"><a href="{{ site.website | default: '/' | relative_url }}">{{ site.author | default: 'AUTHOR' }}</a></span>
   </div>
   <div class="poweredby">
     Powered by <a href="https://jekyllrb.com">Jekyll</a> &
