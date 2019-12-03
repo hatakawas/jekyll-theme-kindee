@@ -55,4 +55,6 @@ kindee:
     recent_posts:
       enabled: true
 
+  ga:
+    TRACKING_ID: "" # Google Universal Analytics Tracking ID 
 
