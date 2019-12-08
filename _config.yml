@@ -56,5 +56,8 @@ kindee:
       enabled: true
 
   ga:
-    TRACKING_ID: "" # Google Universal Analytics Tracking ID 
+    TRACKING_ID: "" # Google Universal Analytics Tracking ID
+
+  ia:
+    TRACKING_ID: "" # Iabacus Analytics Tracking ID
 

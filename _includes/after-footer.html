@@ -1,17 +1,9 @@
 <!-- JQuery -->
 <script src="{{ '/assets/lib/jquery/jquery-3.4.1.min.js' | relative_url }}"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-{%- if site.kindee.ga.TRACKING_ID -%}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.kindee.ga.TRACKING_ID }}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '{{ site.kindee.ga.TRACKING_ID }}');
-</script>
-{%- endif -%}
-
 
 <!-- Custom scripts -->
 <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+<!-- After all -->
+{%- include analytics/google_analytics.html -%}
+{%- include analytics/iabacus_analytics.html -%}

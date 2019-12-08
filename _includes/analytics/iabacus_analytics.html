@@ -1,0 +1,7 @@
+<!-- Iabacus  Analytics -->
+{%- if site.kindee.ia.TRACKING_ID -%}
+<script async src="https://analytics.iabacus.vip/ia.js?id={{ site.kindee.ia.TRACKING_ID }}"></script>
+<script>
+  _iacontext('_iaid', '{{ site.kindee.ia.TRACKING_ID }}');
+</script>
+{%- endif -%}
