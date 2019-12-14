@@ -58,6 +58,6 @@ kindee:
   ga:
     TRACKING_ID: "" # Google Universal Analytics Tracking ID
 
-  ia:
-    TRACKING_ID: "" # Iabacus Analytics Trace ID
+  iaa:
+    TRACKING_ID: "" # IAbacus Analytics Key, like AK-00000-1
 

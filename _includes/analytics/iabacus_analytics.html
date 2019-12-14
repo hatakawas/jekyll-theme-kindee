@@ -1,11 +1,11 @@
 <!-- Iabacus  Analytics -->
-{%- if site.kindee.ia.TRACKING_ID -%}
+{%- if site.kindee.iaa.TRACKING_ID -%}
 <script>
-  var _iaq = _iaq || [];
-  _iaq.push(['_iaid', '{{ site.kindee.ia.TRACKING_ID }}']);
+  var _iaaq = _iaaq || [];
+  _iaaq.push(['iaak', '{{ site.kindee.iaa.TRACKING_ID }}']);
 
   (function() {
-      var ia = document.createElement('script'); ia.type = 'text/javascript'; ia.async = true; ia.src = 'https://analytics.lomagicode.com/ia.js?iaid={{ site.kindee.ia.TRACKING_ID }}';
+      var iaa = document.createElement('script'); iaa.type = 'text/javascript'; iaa.async = true; iaa.src = 'https://analytics.lomagicode.com/iaa.js?iaak={{ site.kindee.iaa.TRACKING_ID }}';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ia, s);
   })();
 </script>
