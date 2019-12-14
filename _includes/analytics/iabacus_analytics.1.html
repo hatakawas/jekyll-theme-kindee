@@ -1,0 +1,13 @@
+<!-- Iabacus  Analytics -->
+{%- if site.kindee.ia.TRACKING_ID -%}
+<script async src="https://analytics.lomagicode.com/ia.js?iaid={{ site.kindee.ia.TRACKING_ID }}"></script>
+<!-- <script>
+  var _iaq = _iaq || [];
+  _iaq.push(['_setAccount', '{{ site.kindee.ia.TRACKING_ID }}']);
+
+  (function() {
+      var ia = document.createElement('script'); ia.type = 'text/javascript'; ia.async = true; ia.src = 'https://analytics.lomagicode.com/ia.js?iaid={{ site.kindee.ia.TRACKING_ID }}';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ia, s);
+  })();
+</script> -->
+{%- endif -%}
