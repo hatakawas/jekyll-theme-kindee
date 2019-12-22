@@ -1,6 +1,5 @@
 .site-header-content {
   box-sizing: border-box;
-  // min-height: inherit;
 
   .site-nav {
     .brand {
@@ -37,8 +36,7 @@
     }
   }
 
-  // >= Laptop
-  @media screen and (min-width: $laptop-min-width) {
+  @include tablet {
     .site-nav {
       display: flex;
       justify-content: space-between;
@@ -67,8 +65,7 @@
     }
   }
 
-  // <= Tablet
-  @media (max-width: $tablet-max-width) {
+  @include mobile {
     .site-nav {
       display: flex;
       flex-wrap: wrap;

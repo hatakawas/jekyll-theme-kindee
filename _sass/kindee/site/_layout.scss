@@ -1,3 +1,11 @@
+$site-header-min-height: 60px !default;
+$site-header-background: rgba(243, 243, 243, 0.945) !default;
+
+$site-body-background: rgba(255, 255, 255, 0.3) !default;
+
+$site-footer-min-height: 60px !default;
+$site-footer-background: rgba(243, 243, 243, 0.945) !default;
+
 .site {
   margin: 0 auto;
   min-height: 100vh;
@@ -23,21 +31,13 @@
   background: $site-body-background;
 }
 
-// #site-header,
-// #site-footer,
-// #site-body {
-//   box-sizing: border-box;
-//   display: flex;
-// }
-
 .site-header-content,
 .site-footer-content,
 .site-body-content {
-  // flex: auto;
   margin: 0 auto;
   padding: 10px 0;
-  max-width: $site-width;
-  // display: flex;
+  // max-width: $site-width;
+  @include container;
 }
 
 #site-main {
@@ -58,11 +58,10 @@
   display: flex;
 }
 
-@media (max-width: 760px) {
+@include mobile {
   #site-sidebar {
     display: none;
   }
-
   .site-body-content {
     padding: 0;
   }

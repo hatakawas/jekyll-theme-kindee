@@ -1,0 +1,29 @@
+// ==========================================================================
+// Themed variables. These values will be set as default theme values.
+// ==========================================================================
+$background: rgb(235, 235, 235) !default;
+$font-family: "Consolas", "Monaco", "Helvetica Neue", Helvetica, Arial,
+  sans-serif;
+$font-size: 14px;
+$line-height: 1.5;
+
+$site-width: 1140px;
+$laptop-min-width: 769px;
+$tablet-max-width: 768px;
+
+$desktop-container-width: 960px;
+$widescreen-container-width: 1152px;
+$fullhd-container-width: 1344px;
+
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 32px !default;
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px !default;
+// 960px container + 4rem
+$desktop: $desktop-container-width + (2 * $gap) !default;
+// 1152px container + 4rem
+$widescreen: $widescreen-container-width + (2 * $gap) !default;
+$widescreen-enabled: true !default;
+// 1344px container + 4rem
+$fullhd: $fullhd-container-width + (2 * $gap) !default;
+$fullhd-enabled: true !default;

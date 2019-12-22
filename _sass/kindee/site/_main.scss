@@ -2,8 +2,7 @@
   padding: 10px;
 }
 
-
-@media (max-width: 760px) {
+@include mobile {
   .site-main-content {
     padding: 10px 0;
   }
