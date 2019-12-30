@@ -1,11 +1,29 @@
 $card-background-color: #ffffff !default;
+$card-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.1) !default;
+$card-border: 1px solid #dddddd !default;
+$card-corlor: #4a4a4a;
+
 
 .card {
-  color: #4a4a4a;
   background-color: $card-background-color;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.1);
+  box-shadow: $card-box-shadow;
+  color: $card-corlor;
+  border: $card-border;
+  // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+
+}
+
+.card-image {
+
 }
 
 .card-content {
   padding: 15px;
+}
+
+.card-footer {
+
 }

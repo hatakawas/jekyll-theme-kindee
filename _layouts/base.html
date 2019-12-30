@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+{%- include head.html -%}
+
+<body class="site">
+  <header id="site-header">
+    {%- include header.html -%}
+  </header>
+  <div id="site-body">
+    <div class="site-body-content container">
+      <main id="site-main">
+        {{content}}
+      </main>
+      {%- if site.kindee.sidebar.enabled -%}
+      <aside id="site-sidebar">
+        {%- include sidebar.html -%}
+      </aside>
+      {%- endif -%}
+    </div>
+  </div>
+  <footer id="site-footer">
+    {%- include footer.html -%}
+  </footer>
+  {%- include after-footer.html -%}
+</body>
+
+</html>
